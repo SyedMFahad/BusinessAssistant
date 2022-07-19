@@ -57,7 +57,7 @@ public class Wellcome extends Activity implements OnClickListener {
 
             Cursor c = db.rawQuery("SELECT * FROM accountset", null);
             if (c.getCount() == 0) {
-                showMessage("Error", "No records found");
+                showMessage("Error", "No records found!");
                 return;
             }
 
